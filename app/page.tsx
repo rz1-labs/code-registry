@@ -16,10 +16,10 @@ export default function Home() {
     <div className="max-w-3xl mx-auto flex flex-col min-h-svh px-4 py-8 gap-8">
       <header className="flex flex-col gap-1">
         <h1 className="text-3xl font-bold tracking-tight">
-          RZ1 Labs - Shadcn Registry
+          RZ1 Labs Code Registry
         </h1>
         <p className="text-muted-foreground">
-          A custom registry for distributing code using shadcn.
+          A registry for distributing code.
         </p>
       </header>
       <main className="flex flex-col flex-1 gap-8">
