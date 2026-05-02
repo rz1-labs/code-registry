@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-neobrutalism",
+  "type": "registry:ui",
+  "title": "Input (Neobrutalism)",
+  "description": "Bold neobrutalism input styles.",
+  "files": [
+    {
+      "path": "registry/neobrutalism/ui/input.tsx",
+      "content": "import * as React from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Input({ className, type, ...props }: React.ComponentProps<\"input\">) {\n  return (\n    <input\n      type={type}\n      data-slot=\"input\"\n      className={cn(\n        \"placeholder:text-black/50 selection:bg-yellow-300 selection:text-black flex h-10 w-full min-w-0 rounded-md border-2 border-black bg-white px-3 py-1 text-base shadow-[4px_4px_0px_0px_#000] transition-transform duration-150 outline-none disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm\",\n        \"focus-visible:-translate-y-0.5 focus-visible:translate-x-0.5 focus-visible:shadow-[2px_2px_0px_0px_#000]\",\n        \"aria-invalid:border-red-500\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nexport { Input }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

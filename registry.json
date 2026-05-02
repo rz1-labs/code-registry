@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "acme",
-  "homepage": "https://acme.com",
+  "name": "rz1-labs.neobrutalism",
+  "homepage": "neobrutalism.rz1labs.in",
   "items": [
     {
       "name": "hello-world",
@@ -72,6 +72,145 @@
         },
         {
           "path": "registry/new-york/blocks/example-with-css/example-card.css",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-neobrutalism",
+      "type": "registry:ui",
+      "title": "Button (Neobrutalism)",
+      "description": "Bold neobrutalism button styles.",
+      "files": [
+        {
+          "path": "registry/neobrutalism/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card-neobrutalism",
+      "type": "registry:ui",
+      "title": "Card (Neobrutalism)",
+      "description": "Bold neobrutalism card styles.",
+      "files": [
+        {
+          "path": "registry/neobrutalism/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input-neobrutalism",
+      "type": "registry:ui",
+      "title": "Input (Neobrutalism)",
+      "description": "Bold neobrutalism input styles.",
+      "files": [
+        {
+          "path": "registry/neobrutalism/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "label-neobrutalism",
+      "type": "registry:ui",
+      "title": "Label (Neobrutalism)",
+      "description": "Bold neobrutalism label styles.",
+      "files": [
+        {
+          "path": "registry/neobrutalism/ui/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "textarea-neobrutalism",
+      "type": "registry:ui",
+      "title": "Textarea (Neobrutalism)",
+      "description": "Bold neobrutalism textarea styles.",
+      "files": [
+        {
+          "path": "registry/neobrutalism/ui/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "hello-world-neobrutalism",
+      "type": "registry:component",
+      "title": "Hello World (Neobrutalism)",
+      "description": "A simple hello world component in neobrutalism style.",
+      "registryDependencies": ["button-neobrutalism"],
+      "files": [
+        {
+          "path": "registry/neobrutalism/blocks/hello-world/hello-world.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "example-form-neobrutalism",
+      "type": "registry:component",
+      "title": "Example Form (Neobrutalism)",
+      "description": "A contact form with Zod validation in neobrutalism style.",
+      "dependencies": ["zod"],
+      "registryDependencies": [
+        "button-neobrutalism",
+        "input-neobrutalism",
+        "label-neobrutalism",
+        "textarea-neobrutalism",
+        "card-neobrutalism"
+      ],
+      "files": [
+        {
+          "path": "registry/neobrutalism/blocks/example-form/example-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "complex-component-neobrutalism",
+      "type": "registry:component",
+      "title": "Complex Component (Neobrutalism)",
+      "description": "A complex component showing hooks, libs and components in neobrutalism style.",
+      "registryDependencies": ["card-neobrutalism"],
+      "files": [
+        {
+          "path": "registry/neobrutalism/blocks/complex-component/page.tsx",
+          "type": "registry:page",
+          "target": "app/pokemon/page.tsx"
+        },
+        {
+          "path": "registry/neobrutalism/blocks/complex-component/components/pokemon-card.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/neobrutalism/blocks/complex-component/components/pokemon-image.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/neobrutalism/blocks/complex-component/lib/pokemon.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/neobrutalism/blocks/complex-component/hooks/use-pokemon.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "example-with-css-neobrutalism",
+      "type": "registry:component",
+      "title": "Example with CSS (Neobrutalism)",
+      "description": "A login form with a CSS file in neobrutalism style.",
+      "files": [
+        {
+          "path": "registry/neobrutalism/blocks/example-with-css/example-card.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/neobrutalism/blocks/example-with-css/example-card.css",
           "type": "registry:component"
         }
       ]
