@@ -60,22 +60,23 @@ Example of multi-file block packaging (components + hook + lib + page):
 
 ## Development
 
-Install dependencies, then run:
+Install dependencies with Bun, then run:
 
 ```bash
-npm run dev
+bun install
+bun run dev
 ```
 
 Build registry artifacts:
 
 ```bash
-npm run registry:build
+bun run registry:build
 ```
 
 Standard production build:
 
 ```bash
-npm run build
+bun run build
 ```
 
 ## Adding New Items
@@ -87,7 +88,7 @@ npm run build
 3. Keep style naming consistent:
    - default style: no suffix
    - non-default styles: use style suffixes like `-neobrutalism`
-4. Run `npm run registry:build` to regenerate files in [public/r](public/r).
+4. Run `bun run registry:build` to regenerate files in [public/r](public/r).
 
 ## Notes
 
